@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+MORM: Configuring the scene for metric dimensions…
+ Image found locally: /tmp/img4blender-bpy-test-8i97o1yt/smoke-reference.png
+ Image loaded and packed into the Blender project.
+======================================================================
+ SUCCESS: Metric reference image added to the scene.
+ Dimensions: 210.00 mm x 297.00 mm
+ 3D Viewport switched to Material Preview.
+ Press Numpad 7 for a top orthographic view.
+======================================================================
+PASS Blender bpy API smoke test: 5.2.3 LTS; Plane=(210.0, 297.0, 0.0) BU; scene scale=0.0010000000474974513
+
+Scope: executed with the official bpy 5.2.3 LTS Python API wheel in headless mode. Verified image loading/packing, Plane dimensions, scene scale, hidden Empty, selection, and material nodes. This does not verify the standalone Blender GUI/viewport or other Blender versions.

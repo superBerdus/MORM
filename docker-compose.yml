@@ -1,0 +1,17 @@
+services:
+  metric-scanner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: metric-scanner-app
+    restart: "no"
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./data:/workspace/data
+      - ./static:/workspace/static
+      - ./core:/workspace/core
+      - ./app:/workspace/app
+      - ./tests:/workspace/tests
+    environment:
+      - PYTHONUNBUFFERED=1

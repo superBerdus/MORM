@@ -1,0 +1,5 @@
+-r requirements.txt
+httpx==0.28.1
+# Optional browser smoke tests and photo analysis:
+playwright>=1.50
+scipy>=1.14

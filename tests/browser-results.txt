@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "source": {
+    "w": 2252,
+    "h": 4000
+  },
+  "output": [
+    2100,
+    2970
+  ],
+  "checks": [
+    "upload",
+    "EXIF display",
+    "independent sidebar scroll/no desktop page overflow",
+    "ruler/custom mode switches preserve preview aspect ratio",
+    "R1/R2 selection and drag under CSS/backing-store scaling",
+    "redetect",
+    "A4 process",
+    "4 downloads",
+    "measurement clicks",
+    "100mm numeric distance",
+    "JSON export",
+    "zoom invariance",
+    "reset",
+    "dialog close",
+    "mobile overflow"
+  ],
+  "browser_errors": []
+}

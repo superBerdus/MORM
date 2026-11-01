@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local configuration and generated runtime data
+.env
+.env.*
+!.env.example
+data/uploads/*
+data/outputs/*
+!data/uploads/.gitkeep
+!data/outputs/.gitkeep
+
+# Local, user-specific analysis material; keep scripts but don't publish sample data
+analysis/*.jpg
+analysis/*.jpeg
+analysis/*.png
+analysis/*.json
+analysis/browser-*.png
+
+# Private development notes / sample-specific review
+project_tracking.md
+task_tracker.md
+project_roadmap.md
+docs/ornek-inceleme.md
