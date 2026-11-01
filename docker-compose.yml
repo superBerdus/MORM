@@ -6,7 +6,7 @@ services:
     container_name: metric-scanner-app
     restart: "no"
     ports:
-      - "8085:8085"
+      - "127.0.0.1:8085:8085"
     volumes:
       - ./data:/workspace/data
       - ./static:/workspace/static
