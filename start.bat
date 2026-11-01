@@ -1,22 +1,22 @@
 @echo off
 cd /d "%~dp0"
 echo ===================================================
-echo  MetricScanner - Blender 1:1 Referans Tarayici
+echo  MORM - Metric Orthophoto Reference Maker
 echo ===================================================
-echo Docker konteyneri baslatiliyor...
+echo Starting Docker container...
 
 docker compose up -d --build
 
-if %ERRORLEVEL% NEQ 0 (
-    echo [HATA] Docker baslatilamadi! Lutfen Docker Desktop'in acik oldugundan emin olun.
+if errorlevel 1 (
+    echo [ERROR] Could not start MORM. Make sure Docker Desktop is running.
     pause
-    exit /b %ERRORLEVEL%
+    exit /b 1
 )
 
 echo.
-echo [BASARILI] MetricScanner Calisiyor!
-echo Web Arayuzu: http://localhost:8085
+echo [SUCCESS] MORM is running.
+echo Web interface: http://localhost:8085
 echo.
 timeout /t 2 >nul
-start http://localhost:8085
+start "" "http://localhost:8085"
 pause

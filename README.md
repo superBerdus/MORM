@@ -13,7 +13,7 @@ A local tool for rectifying a photo against a **known, planar reference** and ex
 1. Back up any existing project folder.
 2. Extract this archive to a new folder; do not run it from inside the ZIP.
 3. Start Docker Desktop.
-4. If another MORM/MetricScanner instance is using port 8085, stop it first.
+4. If another MORM instance is using port 8085, stop it first.
 5. Run `start.bat` from the extracted folder, or use `docker compose up -d --build`.
 6. Open `http://localhost:8085`. Use Ctrl+F5 if an older page is cached.
 
@@ -88,7 +88,7 @@ The Blender smoke test is not included in runtime dependencies and does not test
 
 ## License
 
-MIT License — see LICENSE
+This project is licensed under the ([MIT License](https://github.com/superBerdus/MORM/blob/main/LICENSE)).
 
 ## Project status
 
