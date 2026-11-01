@@ -23,7 +23,7 @@ Python 3.11 or newer is expected by the project configuration:
 
 ```sh
 python -m pip install -r requirements.txt
-python -m uvicorn app.main:app --host 0.0.0.0 --port 8085
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8085
 ```
 
 The web application was tested on Python 3.13 and Chromium. Docker and Windows launcher execution have not been verified in this workspace. The first Docker build needs internet access. Google Fonts are optional; system fonts are used offline. Do not expose the unauthenticated local service to an untrusted network.
